@@ -1,0 +1,9 @@
+@use "global" as *;
+.footer__logo--image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq("md") {
+        aspect-ratio: 200 / 75;
+    }
+}

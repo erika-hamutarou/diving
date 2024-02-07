@@ -1,0 +1,23 @@
+@use "global" as *;
+.blog__section--container {
+    @include mq("md") {
+        position: relative;
+        margin-top: 0;
+        padding-bottom: 2.5rem;
+    }
+}
+
+.blog__section--container::before {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        width: 27.3125rem;
+        height: 12.5625rem;
+        left: calc(50% - min(48vW, 38.75rem));
+        top: -4.125rem;
+        background-image: url(/assets/images/blog-fish.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

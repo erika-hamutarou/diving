@@ -1,0 +1,14 @@
+@use "global" as *;
+.blog__section--bg {
+    @include mq("md") {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 31.25rem;
+        background-image: url('/assets/images/blog-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top, left;
+    }
+}

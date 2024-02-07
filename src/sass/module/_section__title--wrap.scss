@@ -1,0 +1,5 @@
+@use "global" as *;
+.section__title--wrap {
+    text-align: center;
+    @include mq("md") {}
+}

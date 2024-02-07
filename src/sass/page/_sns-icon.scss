@@ -1,0 +1,12 @@
+@use "global" as *;
+.sns-icon {
+    height: 1.5rem;
+    margin-right: 1rem;
+    width: 1.5rem;
+    @include mq("md") {
+        height: 2.125rem;
+        width: 2.125rem;
+        margin-right: 0.875rem;
+        margin-top: 2.25rem;
+    }
+}

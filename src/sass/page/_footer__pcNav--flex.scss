@@ -1,0 +1,7 @@
+@use "global" as *;
+.footer__pcNav--flex {
+    @include mq("md") {
+        display: flex;
+        width: 100%;
+    }
+}

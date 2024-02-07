@@ -1,0 +1,6 @@
+@use "global" as *;
+.contact__button--wrapper {
+    margin-top: 2.5rem;
+    padding-right: 0.4375rem;
+    @include mq("md") {}
+}

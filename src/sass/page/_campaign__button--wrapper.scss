@@ -1,0 +1,14 @@
+@use "global" as *;
+.campaign__button--wrapper {
+    display: none;
+    @include mq("md") {
+        display: block;
+        width: fit-content;
+        height: 5rem;
+        margin: 0;
+        display: flex;
+        position: absolute;
+        top: 0.0625rem;
+        right: 0;
+    }
+}

@@ -1,0 +1,10 @@
+@use "global" as *;
+.contact__address--text {
+    text-align: center;
+    margin-top: 0.875rem;
+    line-height: 1.74;
+    @include mq("md") {
+        margin: 0;
+        text-align: left;
+    }
+}

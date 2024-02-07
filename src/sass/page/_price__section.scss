@@ -1,0 +1,6 @@
+@use "global" as *;
+.price__section {
+    @include mq("md") {
+        padding-top: 6.25rem;
+    }
+}

@@ -1,0 +1,11 @@
+@use "global" as *;
+.blog__card--imageWrapper {
+    position: relative;
+    @include mq("md") {}
+}
+
+.blog__card--imageWrapper::before {
+    content: "";
+    display: block;
+    padding-top: 67%;
+}

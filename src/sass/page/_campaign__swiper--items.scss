@@ -1,0 +1,7 @@
+@use "global" as *;
+.campaign__swiper--items {
+    padding-bottom: 0.625rem;
+    @include mq("md") {
+        padding-left: 2.5rem;
+    }
+}

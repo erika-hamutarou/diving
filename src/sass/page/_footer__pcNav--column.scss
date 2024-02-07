@@ -1,0 +1,6 @@
+@use "global" as *;
+.footer__pcNav--column {
+    @include mq("md") {
+        padding-left: 0.9375rem;
+    }
+}

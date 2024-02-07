@@ -1,0 +1,9 @@
+@use "global" as *;
+.blog__contents--flex {
+    @include mq("md") {
+        display: grid;
+        justify-content: flex-start;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.5rem 2.5rem;
+    }
+}

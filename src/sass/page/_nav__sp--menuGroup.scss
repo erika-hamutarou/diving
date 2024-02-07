@@ -1,0 +1,27 @@
+@use "global" as *;
+.nav__sp--menuGroup {
+    padding-bottom: 1.5rem;
+    @include mq("md") {
+        padding-bottom: 1.3125rem;
+    }
+}
+
+.nav__sp--menuGroup::before {
+    content: '';
+    position: absolute;
+    top: 1.125rem;
+    left: -1.375rem;
+    display: block;
+    width: 1.125rem;
+    height: 1.125rem;
+    background-image: url('/assets/images/menu-icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.nav__sp--menuGroup a {
+    width: 100%;
+    display: inline-block;
+}

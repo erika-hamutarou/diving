@@ -1,0 +1,11 @@
+@use "global" as *;
+.contact__address--area {
+    width: 100%;
+    height: 10rem;
+    margin-top: 0.875rem;
+    @include mq("md") {
+        width: 17rem;
+        height: 9.25rem;
+        margin-top: 0.125rem;
+    }
+}

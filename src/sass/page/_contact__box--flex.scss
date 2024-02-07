@@ -1,0 +1,8 @@
+@use "global" as *;
+.contact__box--flex {
+    padding: 0 1.5625rem;
+    @include mq("md") {
+        display: flex;
+        padding: 0;
+    }
+}

@@ -1,0 +1,7 @@
+@use "global" as *;
+.footer__pcNav--group {
+    @include mq("md") {
+        width: inherit;
+        margin-left: 1.4375rem;
+    }
+}

@@ -1,0 +1,8 @@
+@use "global" as *;
+.footer {
+    background-color: $sub-color;
+    padding: 2.5rem 0;
+    @include mq("md") {
+        padding: 5rem 0;
+    }
+}

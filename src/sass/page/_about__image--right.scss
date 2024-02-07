@@ -1,0 +1,12 @@
+@use "global" as *;
+.about__image--right {
+    position: absolute;
+    top: 1.625rem;
+    right: 0;
+    aspect-ratio: 281 / 186;
+    width: 81.45%;
+    z-index: -1;
+    @include mq("md") {
+        top: 5rem;
+    }
+}

@@ -1,0 +1,11 @@
+@use "global" as *;
+.voice__card--heading {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.8125rem;
+    @include mq("md") {
+        margin-bottom: 0;
+        // display: flex;
+        flex-grow: 1;
+    }
+}

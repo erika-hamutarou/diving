@@ -1,0 +1,35 @@
+@use "global" as *;
+.contact__address--heading {
+    height: 4.0625rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 0.625rem;
+    @include mq("md") {
+        width: 100%;
+        height: 4.6875rem;
+        padding-bottom: 0;
+    }
+}
+
+.contact__address--heading img {
+    width: 10.875rem;
+    height: 4.0625rem;
+    @include mq("md") {
+        width: 12.5rem;
+        height: fit-content;
+    }
+}
+
+.contact__address--heading::before {
+    background-color: $sub-color;
+    bottom: -0.625rem;
+    content: "";
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+    height: 0.0625rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}

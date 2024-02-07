@@ -1,0 +1,12 @@
+@use "global" as *;
+.page-top {
+    background-color: #fff;
+    border: 0.0625rem solid $sub-color;
+    border-radius: 50%;
+    bottom: 0.9375rem;
+    cursor: pointer;
+    height: 3rem;
+    position: fixed;
+    right: 0.9375rem;
+    width: 3rem;
+}

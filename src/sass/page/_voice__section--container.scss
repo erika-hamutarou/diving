@@ -1,0 +1,36 @@
+@use "global" as *;
+.voice__section--container {
+    @include mq("md") {
+        position: relative;
+    }
+}
+
+.voice__section--container::before {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        width: 18.8125rem;
+        height: 8.625rem;
+        left: calc(50% - min(48vw, 38.75rem));
+        top: -7.5rem;
+        background-image: url(/assets/images/voice-fish.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.voice__section--container::after {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        width: 4.4375rem;
+        height: 10.125rem;
+        right: calc(50% - min(48vw, 33.75rem));
+        bottom: -4.0625rem;
+        background-image: url(/assets/images/voice-dragon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

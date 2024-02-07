@@ -1,0 +1,11 @@
+@use "global" as *;
+.line02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right bottom;
+    width: 0.625rem;
+    height: 0.0625rem;
+    background-color: #fff;
+    transform: rotate(45deg);
+}

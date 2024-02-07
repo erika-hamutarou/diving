@@ -1,0 +1,7 @@
+@use "global" as *;
+.contents--container {
+    margin-top: 2.5rem;
+    @include mq("md") {
+        height: auto;
+    }
+}

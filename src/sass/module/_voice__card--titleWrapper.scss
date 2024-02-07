@@ -1,0 +1,12 @@
+@use "global" as *;
+.voice__card--titleWrapper {
+    width: auto;
+    @include mq("md") {
+        // width: auto;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+}

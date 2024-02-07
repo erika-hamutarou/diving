@@ -1,0 +1,7 @@
+@use "global" as *;
+.nav__sp--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=.nav__sp--inner.css.map */

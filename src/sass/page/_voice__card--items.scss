@@ -1,0 +1,6 @@
+@use "global" as *;
+.voice__card--items {
+    @include mq("md") {
+        width: 100%;
+    }
+}

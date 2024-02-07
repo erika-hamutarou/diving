@@ -1,0 +1,13 @@
+@use "global" as *;
+.copy {
+    margin-top: 0.8125rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #fff;
+    font-family: $second-font-family;
+    @include mq("md") {
+        letter-spacing: 0.073rem;
+        margin-top: 3.5rem;
+        margin-left: 0.1875rem;
+    }
+}

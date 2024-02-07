@@ -1,0 +1,9 @@
+@use "global" as *;
+.contact__address--flex {
+    text-align: center;
+    @include mq("md") {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+}

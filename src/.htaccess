@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /home/ドメイン名/フォルダ/.htpasswd
+require valid-user

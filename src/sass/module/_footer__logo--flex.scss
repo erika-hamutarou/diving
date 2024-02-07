@@ -1,0 +1,8 @@
+@use "global" as *;
+.footer__logo--flex {
+    display: flex;
+    flex-direction: column;
+    @include mq("md") {
+        flex-direction: row;
+    }
+}

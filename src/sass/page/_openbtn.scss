@@ -1,0 +1,69 @@
+@use "global" as *;
+.openbtn {
+    position: relative;
+    width: 2.125rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 1.75rem;
+    right: 0.875rem;
+    cursor: pointer;
+    z-index: 999;
+    @include mq("md") {
+        display: none;
+    }
+}
+
+.openbtn span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.0625rem;
+    background-color: #fff;
+    border-radius: 0.0625rem;
+}
+
+.openbtn,
+.openbtn span {
+    display: inline-block;
+    transition: all .5s;
+    box-sizing: border-box;
+}
+
+.openbtn span:nth-of-type(1) {
+    top: 0;
+}
+
+.openbtn span:nth-of-type(2) {
+    top: 0.6875rem;
+}
+
+.openbtn span:nth-of-type(3) {
+    top: 1.4375rem;
+}
+
+
+/*=============================
+btnが開いたとき
+=============================*/
+
+.openbtn.active span:nth-of-type(1) {
+    top: -0.5rem;
+    -webkit-transform: translateY(1.25rem) rotate(45deg);
+    transform: translateY(1.25rem) rotate(45deg);
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+    top: 2rem;
+    -webkit-transform: translateY(-1.25rem) rotate(-45deg);
+    transform: translateY(-1.25rem) rotate(-45deg);
+}
+
+// .openbtn.active {
+//     @include mq("md") {
+//         display: none;
+//     }
+// }

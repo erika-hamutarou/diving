@@ -1,0 +1,10 @@
+@use "global" as *;
+.about__contents--inner {
+    line-height: 1.5;
+    color: $base-color;
+    @include mq("md") {
+        width: 50%;
+        margin-left: 2.375rem;
+        margin-bottom: 0;
+    }
+}

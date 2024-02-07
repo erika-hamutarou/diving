@@ -1,0 +1,7 @@
+@use "global" as *;
+.footer__container {
+    padding: 0.75rem 0 1rem;
+    @include mq("md") {
+        padding: 0;
+    }
+}

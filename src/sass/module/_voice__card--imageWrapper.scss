@@ -1,0 +1,13 @@
+@use "global" as *;
+.voice__card--imageWrapper {
+    min-width: 9.4375rem;
+    width: 9.4375rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    @include mq("md") {
+        margin-top: 0;
+        min-width: 11.25rem;
+        position: relative;
+        padding-top: 29.6%;
+    }
+}

@@ -1,0 +1,11 @@
+@use "global" as *;
+.campaign__section--container {
+    padding: 0 0.9375rem;
+    overflow: hidden;
+    @include mq("md") {
+        overflow: inherit;
+        width: 100%;
+        padding: 0;
+        padding-top: 4.625rem;
+    }
+}

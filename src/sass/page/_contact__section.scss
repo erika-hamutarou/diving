@@ -1,0 +1,11 @@
+@use "global" as *;
+.contact__section {
+    margin-top: 5rem;
+    padding-bottom: 6.25rem;
+    @include mq("md") {
+        margin-top: 0;
+        padding-top: 8.625rem;
+        padding-bottom: 10rem;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,53 @@
+@use "global" as *;
+.nav__pc--list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav__pc--list li {
+    height: 100%;
+    // display: flex;
+    text-align: center;
+    // align-items: center;
+    font-family: "Gotu", sans-serif;
+    margin-right: 2.375em;
+}
+
+.nav__pc--list li a {
+    height: 100%;
+    position: relative;
+    letter-spacing: 0.07em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav__pc--list li:last-of-type {
+    margin-right: 0;
+}
+
+.nav__pc--list li a span {
+    font-size: 0.625rem;
+    font-weight: $regular;
+    font-family: $base-font-family;
+}
+
+.nav__pc--list li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.0625rem;
+    background: #fff;
+    transition: all .3s;
+    transform-origin: center bottom;
+}
+
+.nav__pc--list li a:hover::after {
+    // width: 9.375rem;
+    width: 100%;
+}

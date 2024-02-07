@@ -1,0 +1,9 @@
+@use "global" as *;
+.price__list--text {
+    color: $base-color;
+    font-size: 0.875rem;
+    @include mq("md") {
+        letter-spacing: 0.15em;
+        margin-right: 2.5rem;
+    }
+}

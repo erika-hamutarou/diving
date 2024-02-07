@@ -1,0 +1,7 @@
+@use "global" as *;
+.voice__section {
+    margin: 3.125rem 0 5.375rem;
+    @include mq("md") {
+        margin: 3.75rem 0 8.625rem;
+    }
+}

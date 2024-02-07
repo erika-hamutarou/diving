@@ -1,0 +1,8 @@
+@use "global" as *;
+.blog__card--title {
+    border-bottom: 0;
+    border-bottom: solid 0.0625rem $sub-color;
+    margin-top: 0.25rem;
+    // padding-bottom: 0.5rem;
+    font-weight: $bold;
+}

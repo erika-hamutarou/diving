@@ -1,0 +1,11 @@
+@use "global" as *;
+.mainvisual__text--title {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.52em;
+    line-height: 1.4;
+    @include mq("md") {
+        font-size: 5rem;
+    }
+}

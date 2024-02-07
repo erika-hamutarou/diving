@@ -1,0 +1,15 @@
+@use "global" as *;
+.header {
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    // position: relative;
+    z-index: 888;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-color: rgb(13, 41, 54, 0.68);
+    @include mq("md") {
+        height: 5.625rem;
+    }
+}

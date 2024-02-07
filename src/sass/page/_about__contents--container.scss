@@ -1,0 +1,24 @@
+@use "global" as *;
+.about__contents--container {
+    margin-top: 1.875rem;
+    @include mq("md") {
+        position: relative;
+        margin-top: 1.875rem;
+    }
+}
+
+.about__contents--container::before {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        width: 12.125rem;
+        height: 11.3125rem;
+        background-image: url(/assets/images/about-sango.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: -5.625rem;
+        position: absolute;
+        right: calc(50% - min(48vw, 39.8125rem));
+    }
+}

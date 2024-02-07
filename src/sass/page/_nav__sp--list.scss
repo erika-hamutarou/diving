@@ -1,0 +1,13 @@
+@use "global" as *;
+.nav__sp--list {
+    width: 50%;
+    @include mq("md") {
+        width: inherit;
+    }
+}
+
+.nav__sp--list li {
+    @include mq("md") {
+        line-height: 1.2;
+    }
+}

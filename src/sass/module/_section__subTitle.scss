@@ -1,0 +1,10 @@
+@use "global" as *;
+.section__subTitle {
+    font-size: 0.75rem;
+    color: $sub-color;
+    font-weight: $regular;
+    @include mq("md") {
+        margin-top: 0.6875rem;
+        line-height: 1.2;
+    }
+}

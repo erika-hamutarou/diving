@@ -1,0 +1,10 @@
+@use "global" as *;
+.about__section {
+    overflow: hidden;
+    padding-bottom: 4.375rem;
+    margin-top: 1.875rem;
+    @include mq("md") {
+        padding-bottom: 10.25rem;
+        margin-top: 6.875rem;
+    }
+}

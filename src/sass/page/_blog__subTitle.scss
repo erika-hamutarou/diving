@@ -1,0 +1,13 @@
+@use "global" as *;
+.blog__subTitle {
+    font-size: 0.75rem;
+    color: $sub-color;
+    font-weight: $regular;
+    @include mq("md") {
+        font-size: 0.75rem;
+        color: $sub-color;
+        @include mq("md") {
+            line-height: 1.2;
+        }
+    }
+}

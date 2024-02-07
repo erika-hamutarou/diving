@@ -1,0 +1,7 @@
+@use "global" as *;
+.blog__card--contents {
+    @include mq("md") {
+        display: flex;
+        flex-direction: column;
+    }
+}

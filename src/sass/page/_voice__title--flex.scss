@@ -1,0 +1,12 @@
+@use "global" as *;
+.voice__title--flex {
+    @include mq("md") {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 2.125rem;
+        margin-top: 1.5rem;
+        max-width: 17.3125rem;
+        width: auto;
+    }
+}

@@ -1,0 +1,9 @@
+@use "global" as *;
+.blog__contents--container {
+    margin-top: 1.5625rem;
+    display: flex;
+    justify-content: center;
+    @include mq("md") {
+        margin-top: 5.125rem;
+    }
+}

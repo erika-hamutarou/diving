@@ -1,0 +1,55 @@
+@use "global" as *;
+.button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 2.5rem;
+    width: 12.625rem;
+    height: 3.375rem;
+    border: none;
+    background-color: $sub-color;
+    border: solid 0.0625rem $sub-color;
+    color: #fff;
+    font-size: 0.875rem;
+    font-family: $second-font-family;
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    position: absolute;
+    top: 0.125rem;
+    left: 0.125rem;
+    content: '';
+    border: solid 0.0625rem $sub-color;
+    width: 12.625rem;
+    height: 3.375rem;
+    z-index: -1;
+}
+
+.button::after {
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+}
+
+.button:hover {
+    color: $sub-color;
+}
+
+.button:hover::after {
+    transform: scale(1, 1);
+}
+
+.button:hover .line01,
+.button:hover .line02 {
+    background-color: $sub-color;
+}

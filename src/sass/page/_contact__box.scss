@@ -1,0 +1,24 @@
+@use "global" as *;
+.contact__box {
+    @include mq("md") {
+        box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+        position: relative;
+        padding: 5rem 3.125rem;
+    }
+}
+
+.contact__box::before {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        width: 18.8125rem;
+        height: 8.625rem;
+        right: calc(50% - min(48vw, 42.0625rem));
+        top: 1.875rem;
+        transform: translateY(-50%);
+        background-image: url(/assets/images/price-fish.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

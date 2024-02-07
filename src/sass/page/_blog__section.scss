@@ -1,0 +1,9 @@
+@use "global" as *;
+.blog__section {
+    font-family: $second-font-family;
+    padding-top: 2.5rem;
+    @include mq("md") {
+        position: relative;
+        padding: 5.625rem 0 5rem;
+    }
+}

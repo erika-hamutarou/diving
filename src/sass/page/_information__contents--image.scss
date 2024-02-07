@@ -1,0 +1,22 @@
+@use "global" as *;
+.information__contents--image {
+    width: 100%;
+    @include mq("md") {
+        width: 50%;
+        height: 22.25rem;
+        position: relative;
+    }
+}
+
+.information__contents--image img {
+    @include mq("md") {
+        height: 100%;
+        left: 50%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}

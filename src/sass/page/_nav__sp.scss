@@ -1,0 +1,25 @@
+@use "global" as *;
+.nav__sp {
+    color: #fff;
+    padding: 5rem 0.9375rem 0 0.9375rem;
+    background-color: $sub-color;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include mq("md") {
+        display: none;
+    }
+}
+
+.nav__sp.is-active {
+    display: block;
+    visibility: visible;
+    right: 0;
+    @include mq("md") {
+        display: none;
+    }
+}

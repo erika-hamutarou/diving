@@ -1,0 +1,6 @@
+@use "global" as *;
+.campaign__swiper--item {
+    @include mq("md") {
+        width: 20.8125rem;
+    }
+}

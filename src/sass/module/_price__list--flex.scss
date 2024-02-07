@@ -1,0 +1,6 @@
+@use "global" as *;
+.price__list--flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+}

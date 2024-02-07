@@ -1,0 +1,9 @@
+@use "global" as *;
+.campaign__card--imageWrapper {
+    width: 17.5rem;
+    height: 11.75rem;
+    @include mq("md") {
+        width: 100%;
+        height: 13.9375rem;
+    }
+}

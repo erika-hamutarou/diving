@@ -1,0 +1,6 @@
+@use "./base/**";
+@use "./page/**/*";
+@use "./module/**/*";
+body::-webkit-scrollbar {
+    display: none;
+}

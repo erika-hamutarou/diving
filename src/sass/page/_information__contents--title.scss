@@ -1,0 +1,15 @@
+@use "global" as *;
+.information__contents--title {
+    border-bottom: 0;
+    border-bottom: solid 0.0625rem $sub-color;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $base-color;
+    // margin-bottom: 0.4375rem;
+    @include mq("md") {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.4375rem;
+        line-height: 1;
+    }
+}

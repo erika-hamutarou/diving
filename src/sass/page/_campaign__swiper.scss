@@ -1,0 +1,14 @@
+@use "global" as *;
+.campaign__swiper {
+    margin-top: 1.875rem;
+    padding-bottom: 0.625rem;
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    @include mq("md") {
+        margin-top: 2.5rem;
+        padding-left: 2.125rem;
+        padding-bottom: 1.875rem;
+        position: relative;
+        width: 100vw;
+    }
+}

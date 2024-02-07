@@ -1,0 +1,17 @@
+@use "global" as *;
+.contact__heading {
+    font-size: 5rem;
+    font-family: $second-font-family;
+    color: $base-color;
+    font-weight: $normal;
+    text-transform: capitalize;
+    line-height: 0.9;
+    filter: drop-shadow(0px 0.25rem 0.125rem rgba(0, 0, 0, 0.45));
+    @include mq("md") {
+        margin-top: 1.5rem;
+    }
+}
+
+.contact__heading::first-letter {
+    color: $sub-color;
+}

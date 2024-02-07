@@ -1,0 +1,12 @@
+@use "global" as *;
+.about__image--left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    aspect-ratio: 128/194;
+    max-width: 36.4%;
+    width: auto;
+    @include mq("md") {
+        max-width: 37%;
+    }
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+.nav__sp--menu {
+    width: 100%;
+    display: inline-block;
+    @include mq("md") {
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+}
+
+.nav__sp--menu:hover {
+    opacity: 0.6;
+}

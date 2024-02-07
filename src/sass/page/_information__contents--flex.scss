@@ -1,0 +1,6 @@
+@use "global" as *;
+.information__contents--flex {
+    @include mq("md") {
+        display: flex;
+    }
+}

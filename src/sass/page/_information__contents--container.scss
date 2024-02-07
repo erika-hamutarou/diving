@@ -1,0 +1,8 @@
+@use "global" as *;
+.information__contents--container {
+    margin-top: 1.875rem;
+    @include mq("md") {
+        margin-top: 2.5rem;
+        margin-left: -0.375rem;
+    }
+}

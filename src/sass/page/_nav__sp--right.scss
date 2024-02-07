@@ -1,0 +1,7 @@
+@use "global" as *;
+.nav__sp--right {
+    margin-left: 1.4375rem;
+    @include mq("md") {
+        margin-left: 0;
+    }
+}

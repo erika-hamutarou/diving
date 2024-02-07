@@ -1,0 +1,16 @@
+@use "global" as *;
+.campaign__card--tag {
+    height: 1.875rem;
+    color: $sub-color;
+    font-size: 0.75rem;
+    border: solid 0.0625rem $sub-color;
+    padding: 0 0.6875rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq("md") {
+        height: 2.125rem;
+        padding: 0 0.95rem;
+    }
+}

@@ -1,0 +1,9 @@
+@use "global" as *;
+.price__contents--flex {
+    @include mq("md") {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        // margin-bottom: 5rem;
+    }
+}
