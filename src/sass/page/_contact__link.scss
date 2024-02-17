@@ -1,6 +1,6 @@
 @use "global" as *;
 .contact__link {
-    margin-top: 2.5rem;
+    margin-top: 2.75rem;
     @include mq("md") {
         width: 50%;
         padding-left: 1.25rem;

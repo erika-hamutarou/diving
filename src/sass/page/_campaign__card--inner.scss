@@ -1,0 +1,5 @@
+@use "global" as *;
+.campaign__card--inner {
+    border-top: solid 0.0625rem $sub-color;
+    @include mq("md") {}
+}

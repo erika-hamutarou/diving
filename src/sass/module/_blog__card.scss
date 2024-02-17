@@ -14,7 +14,7 @@
 }
 
 .blog__card:not(:first-child) {
-    margin-top: 2.5rem;
+    margin-top: 2.4375rem;
     @include mq("md") {
         margin-top: inherit;
     }

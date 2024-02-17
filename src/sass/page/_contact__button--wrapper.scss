@@ -1,6 +1,9 @@
 @use "global" as *;
 .contact__button--wrapper {
     margin-top: 2.5rem;
-    padding-right: 0.4375rem;
-    @include mq("md") {}
+    text-align: center;
+    @include mq("md") {
+        padding: 0 2.5em;
+        margin-top: 2.5rem;
+    }
 }

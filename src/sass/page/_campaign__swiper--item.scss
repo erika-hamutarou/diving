@@ -1,5 +1,7 @@
 @use "global" as *;
 .campaign__swiper--item {
+    flex-shrink: inherit;
+    height: initial;
     @include mq("md") {
         width: 20.8125rem;
     }

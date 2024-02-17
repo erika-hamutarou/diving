@@ -1,6 +1,6 @@
 @use "global" as *;
 .nav__sp--menuGroup {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
     @include mq("md") {
         padding-bottom: 1.3125rem;
     }

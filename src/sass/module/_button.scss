@@ -1,6 +1,6 @@
 @use "global" as *;
 .button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding-left: 2.5rem;

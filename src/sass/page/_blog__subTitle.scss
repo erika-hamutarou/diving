@@ -5,7 +5,7 @@
     font-weight: $regular;
     @include mq("md") {
         font-size: 0.75rem;
-        color: $sub-color;
+        color: #fff;
         @include mq("md") {
             line-height: 1.2;
         }

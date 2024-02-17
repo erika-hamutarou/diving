@@ -1,6 +1,4 @@
 @use "global" as *;
-// .price__list--Wrapper {
-// }
 .price__list--Wrapper:not(:first-child) {
     margin-top: 2.5rem;
     @include mq("md") {

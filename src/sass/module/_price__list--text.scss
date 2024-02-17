@@ -2,8 +2,10 @@
 .price__list--text {
     color: $base-color;
     font-size: 0.875rem;
+    line-height: 1.56;
     @include mq("md") {
         letter-spacing: 0.15em;
         margin-right: 2.5rem;
+        line-height: inherit;
     }
 }

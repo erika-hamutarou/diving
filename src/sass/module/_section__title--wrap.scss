@@ -1,5 +1,8 @@
 @use "global" as *;
 .section__title--wrap {
     text-align: center;
-    @include mq("md") {}
+    margin-left: -0.625rem;
+    @include mq("md") {
+        margin-left: inherit;
+    }
 }

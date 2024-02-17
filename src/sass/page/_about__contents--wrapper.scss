@@ -1,12 +1,14 @@
 @use "global" as *;
 .about__contents--wrapper {
     @include mq("md") {
-        max-width: 52.5rem;
+        // max-width: 52.5rem;
         width: auto;
-        height: 15.125rem;
+        // height: 15.125rem;
         display: flex;
+        // gap: 2.5rem;
         position: absolute;
         top: 12.6rem;
         left: 12.5rem;
+        z-index: 3;
     }
 }

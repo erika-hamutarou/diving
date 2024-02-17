@@ -2,7 +2,12 @@
 .campaign__card--contents {
     padding: 1rem;
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     @include mq("md") {
+        height: 100%;
         padding: 1.5rem 1rem 1.875rem;
     }
 }

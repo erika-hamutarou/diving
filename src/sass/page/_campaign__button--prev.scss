@@ -4,7 +4,6 @@
     height: 5rem;
     border: 0.0625rem solid $sub-color;
     border-radius: 50%;
-    margin-right: 5rem;
     cursor: pointer;
     position: relative;
     transition: .3s;
@@ -14,7 +13,7 @@
     border-top: 0.0625rem solid $sub-color;
     content: "";
     position: absolute;
-    top: 52%;
+    top: 50%;
     transform: translate(0, -50%);
     left: 50%;
     transform: translate(-50%, -50%);
@@ -26,15 +25,15 @@
     border-top: 0.0625rem solid $sub-color;
     content: "";
     position: absolute;
-    top: 51%;
+    top: 50%;
     transform: translate(0, -50%);
-    left: 0.875rem;
+    right: 0.875rem;
     width: 0.625rem;
     height: 0.0625rem;
-    transform: rotate(135deg) translate(-50%, -50%);
+    transform: rotate(45deg) translate(-50%, -50%);
 }
 
 .campaign__button--prev:hover {
-    opacity: 0.8;
+    opacity: 0.4;
     transition: .3s;
 }

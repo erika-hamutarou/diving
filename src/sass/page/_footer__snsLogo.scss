@@ -1,4 +1,7 @@
 @use "global" as *;
 .footer__snsLogo {
     display: flex;
+    @include mq("md") {
+        padding-top: 2.3125rem;
+    }
 }

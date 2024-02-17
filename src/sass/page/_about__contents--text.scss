@@ -1,6 +1,6 @@
 @use "global" as *;
 .about__contents--text {
-    margin-top: 1.0625rem;
+    margin-top: 1rem;
     @include mq("md") {
         color: #fff;
         margin-top: 0;

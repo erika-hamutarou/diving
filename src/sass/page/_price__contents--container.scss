@@ -1,6 +1,6 @@
 @use "global" as *;
 .price__contents--container {
-    margin-top: 1.875rem;
+    margin-top: 1.75rem;
     @include mq("md") {
         margin-top: 2.625rem;
     }

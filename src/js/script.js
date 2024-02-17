@@ -4,24 +4,6 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
     //------------------------------------------------
     //  ハンバーガーメニューの設定
     //------------------------------------------------
-    // // ハンバーガーメニューをクリック時、「三」マークから「✖️」マークに変形するアクション
-    // $(".openbtn").click(function() {
-    //     $(this).toggleClass('active');
-    //     $('.nav__sp').fadeToggle(300);
-
-    // });
-
-    // //ハンバーガーメニューをクリック時、メニュー一覧を表示
-    // $(".openbtn").click(function() {
-    //     $(".nav__sp").toggleClass('is-active');
-    // });
-
-
-    // //ハンバーガーメニュー内のメニューをクリック時、メニュー一覧を閉じる
-    // $(".nav__sp--menu, .nav__sp--subMenu").click(function() {
-    //     $(".nav__sp").removeClass('is-active');
-    //     $(".openbtn").removeClass('active');
-    // });
 
     // ウィンドウがロードされたときとリサイズされたときに実行される関数
     function handleResize() {
@@ -42,7 +24,7 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
         });
 
 
-        $(".openbtn").click(function() {
+        $(".js-hamburger").click(function() {
             $(this).toggleClass('active');
             $('.nav__sp').fadeToggle(300);
 
@@ -51,7 +33,7 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
             }
         });
 
-        $(".openbtn").click(function() {
+        $(".js-hamburger").click(function() {
             $(".nav__sp").toggleClass('is-active');
         });
 
@@ -59,8 +41,25 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
             $(".nav__sp").removeClass('is-active');
             $(".openbtn").removeClass('active');
         });
+        // スクロールさせない
+        $(function() {
+            // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+            $(".js-hamburger").click(function() {
 
+                // 現在のbodyタグのoverflowスタイルを確認
+                if ($("body").css("overflow") === "hidden") {
 
+                    // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+                    $("body").css({ height: "", overflow: "" });
+
+                } else {
+
+                    // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+                    $("body").css({ height: "100%", overflow: "hidden" });
+
+                }
+            });
+        });
         // ----------------------------------------------
         //  メインビジュアルのスライドショーの設定
         //------------------------------------------------
@@ -70,7 +69,7 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
             effect: 'fade',
             speed: 2500,
             // ループの時間
-            slidesPerView: '4',
+            slidesPerView: '1',
             allowTouchMove: false,
             // スワイプ無効
             autoplay: {
@@ -91,6 +90,7 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
             // スワイプ有効
             grabCursor: true,
             //スライドをつかむ仕草
+            spaceBetween: 24,
             autoplay: {
                 delay: 1500,
                 disableOnInteraction: false
@@ -102,8 +102,8 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
             },
             navigation: {
                 nextEl: ".campaign__button--next",
-                prevEl: ".campaign__button--prev",
-                clickable: true
+                prevEl: ".campaign__button--prev"
+
             }
         });
 
@@ -172,6 +172,5 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
                 });
             });
         });
-
     });
 });

@@ -1,9 +1,9 @@
 @use "global" as *;
 .about__contents--container {
-    margin-top: 1.875rem;
+    margin-top: 1.75rem;
     @include mq("md") {
         position: relative;
-        margin-top: 1.875rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -20,5 +20,6 @@
         bottom: -5.625rem;
         position: absolute;
         right: calc(50% - min(48vw, 39.8125rem));
+        z-index: 10;
     }
 }

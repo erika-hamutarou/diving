@@ -1,0 +1,6 @@
+@use "global" as *;
+.footer__pcNav--first {
+    @include mq("md") {
+        margin-left: 1.375rem;
+    }
+}

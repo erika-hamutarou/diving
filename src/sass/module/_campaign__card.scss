@@ -1,17 +1,18 @@
 @use "global" as *;
 .campaign__card {
     // box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
-    height: 22.875rem;
+    // height: 22.875rem;
     max-width: 17.5rem;
     transition: 0.3s;
     width: 17.5rem;
+    height: 100%;
     display: block;
     @include mq("md") {
         display: block;
         height: 100%;
         max-width: 20.8125rem;
         min-height: 27.8125rem;
-        width: 100%;
+        width: 20.8125rem;
     }
 }
 

@@ -1,9 +1,8 @@
 @use "global" as *;
 .price__section--container {
-    padding: 2.5rem 0 5rem;
     @include mq("md") {
         padding-top: 0;
-        padding-bottom: 6.25rem;
+        padding-bottom: 0;
         margin: 0 auto;
         position: relative;
     }
@@ -13,7 +12,7 @@
     @include mq("md") {
         position: absolute;
         content: "";
-        bottom: 3.8125rem;
+        bottom: -2.5rem;
         left: calc(50% - min(48vw, 38.75rem));
         width: 27.3125rem;
         height: 12.5625rem;

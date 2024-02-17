@@ -1,7 +1,7 @@
 @use "global" as *;
 .voice__section {
-    margin: 3.125rem 0 5.375rem;
+    padding: 4.9375rem 0 5.0625rem;
     @include mq("md") {
-        margin: 3.75rem 0 8.625rem;
+        padding: 8.75rem 0 8.625rem;
     }
 }

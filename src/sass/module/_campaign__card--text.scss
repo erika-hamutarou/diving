@@ -5,8 +5,9 @@
         margin-top: 0.4375rem;
         letter-spacing: -0.1em;
         @include mq("md") {
+            text-align: initial;
             margin-top: 1rem;
-            margin-left: -0.9375rem;
+            padding-left: 3.75rem;
             letter-spacing: 0;
         }
     }

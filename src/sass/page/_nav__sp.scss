@@ -10,15 +10,18 @@
     position: absolute;
     right: 0;
     top: 0;
+    overflow: scroll;
+    display: none;
     @include mq("md") {
         display: none;
     }
 }
 
-.nav__sp.is-active {
+.nav__sp.is-open {
     display: block;
     visibility: visible;
     right: 0;
+    transition: .3s;
     @include mq("md") {
         display: none;
     }
