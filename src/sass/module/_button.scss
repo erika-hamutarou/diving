@@ -49,7 +49,6 @@
     transform: scale(1, 1);
 }
 
-.button:hover .line01,
-.button:hover .line02 {
-    background-color: $sub-color;
+.button:hover .arrow {
+    background-image: url(/assets/images/arrow-green.png);
 }

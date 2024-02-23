@@ -1,8 +1,0 @@
-@use "global" as *;
-.information__section {
-    background-color: #DDF0F1;
-    padding: 5rem 0 5.125rem;
-    @include mq("md") {
-        padding: 6.25rem 0 4.8125rem;
-    }
-}

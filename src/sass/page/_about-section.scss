@@ -1,0 +1,7 @@
+@use "global" as *;
+.about-section {
+    margin-top: 4.9375rem;
+    @include mq("md") {
+        margin-top: 8.75rem;
+    }
+}

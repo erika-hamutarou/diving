@@ -10,7 +10,6 @@
     position: absolute;
     right: 0;
     top: 0;
-    overflow: scroll;
     display: none;
     @include mq("md") {
         display: none;

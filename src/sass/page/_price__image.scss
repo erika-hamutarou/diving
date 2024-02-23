@@ -1,8 +1,8 @@
 @use "global" as *;
 .price__image {
     @include mq("md") {
-        width: calc(50% - 2.875rem);
-        margin-left: 2.875rem;
+        width: 45.6%;
+        // margin-left: 2.875rem;
         // padding-bottom: 2.5rem;
     }
 }

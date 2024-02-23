@@ -1,6 +1,13 @@
 @use "global" as *;
 .arrow {
-    position: relative;
-    width: 2.5rem;
-    transition: .3s;
+    content: '';
+    position: absolute;
+    top: 38%;
+    left: 60%;
+    width: 2.5625rem;
+    height: 0.4375rem;
+    background-image: url(/assets/images/arrow-white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

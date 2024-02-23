@@ -1,9 +1,6 @@
 @use "global" as *;
 .price__section--container {
     @include mq("md") {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin: 0 auto;
         position: relative;
     }
 }

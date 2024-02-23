@@ -1,5 +1,5 @@
 @use "global" as *;
-.voice__card--items {
+.voice__card {
     @include mq("md") {
         width: 100%;
     }

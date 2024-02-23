@@ -34,5 +34,6 @@
     width: 100%;
     @include mq("md") {
         bottom: -0.625rem;
+        filter: none;
     }
 }

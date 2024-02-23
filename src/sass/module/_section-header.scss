@@ -1,5 +1,5 @@
 @use "global" as *;
-.section__title--wrap {
+.section-header {
     text-align: center;
     margin-left: -0.625rem;
     @include mq("md") {

@@ -1,23 +1,12 @@
 @use "global" as *;
 .blog__card {
-    max-width: 20.8125rem;
-    width: 100%;
+    width: auto;
     background-color: #fff;
     padding: 1rem 1.0625rem 1.375rem 1rem;
     box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
     transition: .3s;
     display: block;
-    @include mq("md") {
-        width: auto;
-        max-width: 20.8125rem;
-    }
-}
-
-.blog__card:not(:first-child) {
-    margin-top: 2.4375rem;
-    @include mq("md") {
-        margin-top: inherit;
-    }
+    @include mq("md") {}
 }
 
 .blog__card:hover {

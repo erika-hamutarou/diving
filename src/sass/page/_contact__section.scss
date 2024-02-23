@@ -1,7 +1,0 @@
-@use "global" as *;
-.contact__section {
-    padding: 5rem 0 6.4375rem;
-    @include mq("md") {
-        padding: 8.625rem 0 10rem;
-    }
-}

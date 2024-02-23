@@ -1,11 +1,10 @@
 @use "global" as *;
-.voice__contents--flex {
+.voice__cards {
     margin-top: 2.6875rem;
     @include mq("md") {
         display: grid;
         gap: 2.5rem 2.5rem;
-        margin-top: 1.8125rem;
-        // padding-bottom: 2.5rem;
+        margin-top: 1.875rem;
         grid-template-columns: 1fr 1fr;
     }
 }

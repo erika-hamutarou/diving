@@ -1,9 +1,0 @@
-@use "global" as *;
-.campaign__section {
-    padding-top: 2.375rem;
-    @include mq("md") {
-        padding-top: 7.5rem;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-}

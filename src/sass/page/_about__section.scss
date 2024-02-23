@@ -1,7 +1,0 @@
-@use "global" as *;
-.about__section {
-    padding: 4.9375rem 0 4.5625rem;
-    @include mq("md") {
-        padding: 8.75rem 0 10.25rem;
-    }
-}

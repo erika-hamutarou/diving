@@ -1,10 +1,11 @@
 @use "global" as *;
 .contact__link {
+    text-align: center;
     margin-top: 2.75rem;
     @include mq("md") {
         width: 50%;
-        padding-left: 1.25rem;
-        margin-top: 0.125rem;
+        margin-top: 0;
+        margin-left: 1.25rem;
         flex: 1;
     }
 }

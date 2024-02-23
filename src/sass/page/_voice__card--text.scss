@@ -1,2 +1,7 @@
 @use "global" as *;
-// .voice__card--text {}
+.voice__card--text {
+    margin-top: 0.9375rem;
+    @include mq("md") {
+        margin-top: 2.4375rem;
+    }
+}

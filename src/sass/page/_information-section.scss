@@ -1,0 +1,12 @@
+@use "global" as *;
+.information-section {
+    margin-top: 4.5625rem;
+    background-color: #DDF0F1;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    @include mq("md") {
+        padding-top: 6.25rem;
+        padding-bottom: 4.8125rem;
+        margin-top: 10.25rem;
+    }
+}

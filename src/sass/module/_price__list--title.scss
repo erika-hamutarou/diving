@@ -5,6 +5,7 @@
     padding-bottom: 0.1875rem;
     font-weight: $bold;
     color: $base-color;
+    font-size: 1rem;
     @include mq("md") {
         margin: 0;
         padding-bottom: 0.25rem;

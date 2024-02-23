@@ -1,15 +1,17 @@
 @use "global" as *;
-.voice__card--tag {
+.card-tag {
     border: solid 0.0625rem $sub-color;
     color: $sub-color;
     font-size: 0.75rem;
     height: 1.875rem;
-    padding: 0 0.6875rem;
+    // padding: 0 0.6875rem;
     width: -moz-fit-content;
     width: fit-content;
     display: flex;
     align-items: center;
-    justify-content: center;
+    // text-align: center;
+    // justify-content: center;
+    padding: 0.625rem 0.6875rem;
     @include mq("md") {
         height: 2.125rem;
         padding: 0 0.9375rem;
